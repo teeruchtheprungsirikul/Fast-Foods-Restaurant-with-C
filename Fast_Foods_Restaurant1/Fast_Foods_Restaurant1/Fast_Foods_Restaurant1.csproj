@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{496004B6-70D7-4D7F-9A18-88452E26A2FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fast_Foods_Restaurant1</RootNamespace>
+    <AssemblyName>Fast_Foods_Restaurant1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_home.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\LENOVO\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aboutus_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Aboutus_UC.Designer.cs">
+      <DependentUpon>Aboutus_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactUs_UC.Designer.cs">
+      <DependentUpon>ContactUs_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desserts_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desserts_UC.Designer.cs">
+      <DependentUpon>Desserts_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drinks_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drinks_UC.Designer.cs">
+      <DependentUpon>Drinks_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Foods1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Foods1.Designer.cs">
+      <DependentUpon>Foods1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Foods_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Foods_UC.Designer.cs">
+      <DependentUpon>Foods_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCart1.cs" />
+    <Compile Include="MyCartt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyCartt.Designer.cs">
+      <DependentUpon>MyCartt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCart_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyCart_UC.Designer.cs">
+      <DependentUpon>MyCart_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Aboutus_UC.resx">
+      <DependentUpon>Aboutus_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactUs_UC.resx">
+      <DependentUpon>ContactUs_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desserts_UC.resx">
+      <DependentUpon>Desserts_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drinks_UC.resx">
+      <DependentUpon>Drinks_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foods1.resx">
+      <DependentUpon>Foods1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foods_UC.resx">
+      <DependentUpon>Foods_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCartt.resx">
+      <DependentUpon>MyCartt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyCart_UC.resx">
+      <DependentUpon>MyCart_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_home.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
